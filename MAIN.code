@@ -1,0 +1,152 @@
+#include<iostream.h>
+#include<stlib.h>
+#include<string.h>
+#include<ctime>
+#include<fstream>
+#ifndef _BOOKING CLASS_H
+#define _BOOKING CLASS_H
+class Booking Class
+{
+public:
+int booking_id;
+string booking_type;
+string booking_description;
+string booking_date;
+string booking_hotel_id;
+void addBooking();
+void editBooking();
+void deleteBooking();
+void searchBooking();
+};
+#endif //_BOOKING CLASS_H
+#ifndef _CUSTOMER CLASS_H #define _CUSTOMER CLASS_H
+class Customer Class
+{
+public:
+int customer_id;
+string customer_name;
+string customer_mobile;
+string customer_email;
+string customer_address;
+string customer_username;
+string customer_password;
+void addCustomer();
+void editCustomer();
+void deleteCustomer();
+void searchCustomer();
+};
+#endif //_CUSTOMER CLASS_H
+#ifndef _HOTEL CLASS_H
+#define _HOTEL CLASS_H
+class Hotel Class
+{
+public:
+int hotel_id;
+string hotel_name;
+string hotel_description;
+21
+string hotel_type
+;
+string hotel_address
+;
+string hotel_rent
+;
+void addHotel();
+void editHotel();
+void deleteHotel();
+void searchHotel();
+};
+#endif //_HOTEL CLASS_H
+#ifndef _PERMISSION CLASS_H
+#define _PERMISSION CLASS_H
+class Permission Class {
+public:
+int permission_id;
+int permission_role_id
+;
+string permission_title
+;
+string permission_module
+;
+string permission_description
+;
+void addPermission();
+void editPermission();
+void deletePermission();
+void searchPermission();
+class Class1 {
+};
+class Class2 {
+};
+};
+#endif //_PERMISSION CLASS_H
+#ifndef _ROLE CLASS_H #define _ROLE CLASS_H
+class Role Class {
+public:
+int role_id;
+string role_title
+;
+string role_description
+;
+void addUser();
+void editUser();
+void deleteRole();
+void searchRole();
+void assignRole();
+};
+#endif //_ROLE CLASS_H
+#ifndef _TRANSPORTATION CLASS_H
+#define _TRANSPORTATION 
+CLASS_H class Transportation Class
+22
+{ 
+public: 
+int transportation_id; 
+string transportation_name; 
+string transportation_description; 
+int transportation_tour_id; 
+void addTransportation(); 
+void editTransportation(); 
+void deleteTransportation();
+ void searchTransportation();
+};
+#endif //_TRANSPORTATION CLASS_H
+#ifndef _TRAVEL AGENT CLASS_H #define _TRAVEL AGENT CLASS_H
+class Travel Agent Class
+{
+public:
+int travel_agent_id;
+int travel_agent_college_id;
+string travel_agent_name;
+string travel_agent_mobile;
+string travel_agent_email;
+string travel_agent_address;
+string travel_agent_username;
+string travel_agent_password;
+void addTravelAgent();
+void editTravelAgent();
+void deleteTravelAgent();
+void searchTravelAgent();
+};
+#endif //_TRAVEL AGENT CLASS_H
+#ifndef _USER CLASS_H #define _USER CLASS_H
+#include "Permission Class.h"
+#include "Permission Class.h"
+#include "Role Class.h"
+#include "Permission Class.h"
+class User Class : public User Class, public Permission Class, public Permission Class, 
+public Role Class, public Permission Class
+{
+public:
+int user_id;
+int user_role_id;
+string user_name;
+string user_email;
+date user_dob;
+string user_address;
+void addUser();
+void editUser();
+void deleteUser();
+void searchUser();
+};
+#endif //_USER CLASS_H
